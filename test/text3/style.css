@@ -1,0 +1,15 @@
+/* button {
+    display: flex;
+    
+
+} */
+
+body {
+    padding: 0;
+    display: table-row;
+}
+
+.button {
+    display: flex;
+    display: table-row;
+}

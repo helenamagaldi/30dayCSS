@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+        <button>button 1</button>
+        <button>button 2</button>
+        <button>button 1</button>
+        <button>button 2</button>
+    <!-- <script src="text2/script2.js"></script> -->
+
+<script>
+var nodes = document.getElementsByTagName('button');
+    
+    for (var i = 0, size = nodes.length; i < size; i++) {
+      nodes[i].addEventListener('click', function(i) {
+        console.log('You clicked element index' + i);
+      }.bind(null, i));
+    }
+
+</script>
+</body>
+</html>
